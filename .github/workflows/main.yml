@@ -45,14 +45,14 @@ jobs:
 
       # 8. Upload APK as artifact (Debug APK)
       - name: Upload APK
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v3
         with:
           name: app-debug-apk
           path: app/build/outputs/apk/debug/app-debug.apk
 
       # 9. Upload reports (optional)
       - name: Upload Lint and Test Reports
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v3
         with:
           name: reports
           path: |
